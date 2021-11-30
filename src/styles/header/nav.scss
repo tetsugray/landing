@@ -1,0 +1,18 @@
+.header__nav {
+    width: 539px;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.header__link {
+    font-family: "SF Compact Display";
+    font-size: 21px;
+    line-height: 28px;
+    letter-spacing: 0.055em;
+    font-weight: bold;
+    color: rgba(61, 144, 144, 1);
+    text-transform: uppercase;
+    text-decoration: none;
+}
