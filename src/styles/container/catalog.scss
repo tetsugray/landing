@@ -1,0 +1,110 @@
+.catalog {
+    position: relative;
+    // display: flex;
+    // flex-direction: row;
+    border-top: 1px solid rgba(196, 196, 196, 1);
+}
+
+.catalog__wrapper {
+    overflow: hidden;
+    position: absolute;
+    top: 25px;
+    width: 405px;
+    height: 450px;
+}
+
+.catalog__options {
+    position: absolute;
+    left: 536px;
+    top: 40px;
+    height: 554px;
+    width: 167px;
+    background-color: rgba(189, 221, 221, 1);
+    border-radius: 14px 0 0 14px;
+}
+
+.catalog__lamp-information {
+    position: absolute;
+    left: -57px;
+    width: 462px;
+    height: 451px;
+    background-color: rgba(228, 215, 185, 1);
+    border-radius: 50%;
+}
+
+.catalog__text {
+    position: absolute;
+    left: 95px;
+    top: 133px;
+    font-family: "SF Compact Display";
+    font-style: 16px;
+    line-height: 21px;
+    letter-spacing: 0.055em;
+    width: 327px;
+    height: 185px;
+    overflow: auto;
+}
+
+.catalog__lamp {
+    position: absolute;
+    left: 294px;
+}
+
+.catalog__lamp-list {
+    height: 478px;
+    width: 167px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.catalog__lamp-list::-webkit-scrollbar {
+    display: none;
+}
+
+.catalog__lamp-wrapper {
+    width: 133px;
+    flex: 1;
+    min-height: 0;
+}
+
+.catalog__choose-lamp {
+    width: 133px;
+    height: 131px;
+    border-radius: 14px;
+    background-color: rgba(189, 221, 221, 1);
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.25);
+    }
+    
+    &:active {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    &:focus {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+.catalog__buttons {
+    display: flex;
+    flex-direction: row;
+    height: 76px;
+}
+
+.catalog__button {
+    width: 50%;
+}
+
+.catalog__button_day {
+    background-color: rgba(255, 243, 218, 1);
+    border-bottom-left-radius: 14px;
+}
+
+.catalog__button_night {
+    background-color: rgba(148, 166, 166, 1);
+}

@@ -32,6 +32,10 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.html$/i,
+                loader: "html-loader",
+            },
+            {
                 test: /\.s[ac]ss$/i,
                 use: [
                     MiniCssExtractPlugin.loader,
@@ -48,7 +52,7 @@ module.exports = {
                     presets: ['@babel/preset-env']
                   }
                 }
-              },
+            },
             {
                 test: /\.(?:ico|webp|gif|png|jpg|jpeg)$/i,
                 type: 'asset/resource',
