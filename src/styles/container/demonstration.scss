@@ -13,4 +13,9 @@
 .container__lamp {
     position: absolute;
     left: 215px;
+    height: 33%;
+
+    img {
+        height: 100%;
+    }
 }

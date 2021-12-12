@@ -9,5 +9,4 @@ export async function getLampData() {
     } finally {
         console.log('finally')
     }
-    
 }
