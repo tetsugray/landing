@@ -1,7 +1,5 @@
 .catalog {
     position: relative;
-    // display: flex;
-    // flex-direction: row;
     border-top: 1px solid rgba(196, 196, 196, 1);
 }
 
@@ -47,7 +45,12 @@
 
 .catalog__lamp {
     position: absolute;
-    left: 294px;
+    right: 200px;
+    max-width: 310px;
+    
+    img {
+        width: 100%;
+    }
 }
 
 .catalog__lamp-list {
@@ -77,6 +80,10 @@
     margin-top: 15px;
     margin-bottom: 5px;
 
+    img {
+        height: 100%;
+    }
+
     &:hover {
         background-color: rgba(255, 255, 255, 0.25);
     }
@@ -96,15 +103,15 @@
     height: 76px;
 }
 
-.catalog__button {
+.catalog__choose-mode {
     width: 50%;
 }
 
-.catalog__button_day {
+.catalog__choose-mode_light {
     background-color: rgba(255, 243, 218, 1);
     border-bottom-left-radius: 14px;
 }
 
-.catalog__button_night {
+.catalog__choose-mode_dark {
     background-color: rgba(148, 166, 166, 1);
 }
