@@ -1,3 +1,5 @@
+
+
 import {addLampList} from './js/addLampList'
 import {getLampData} from "./js/fetch"
 import {changeLamp} from './js/changeLamp'

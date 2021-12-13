@@ -2,6 +2,8 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+const ghpages = require('gh-pages')
+ghpages.publish('dist', function(err) {console.log(err)})
 
 module.exports = {
     context: path.resolve(__dirname, 'src'),
