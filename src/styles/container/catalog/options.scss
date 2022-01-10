@@ -1,0 +1,77 @@
+.catalog__options {
+    margin-top: 3vh;
+    width: 8vw;
+    height: 20vw;
+    background-color: rgba(189, 221, 221, 1);
+    border-radius: 14px 0 0 14px;
+}
+
+.catalog__lamp-list {
+    width: 8vw;
+    border-radius: 14px;
+    height: 18vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.catalog__lamp-wrapper {
+    width: 6vw;
+}
+.catalog__lamp-list::-webkit-scrollbar {
+    width: 5px;
+}
+
+.catalog__lamp-list::-webkit-scrollbar-thumb {
+    background-color: rgb(182, 178, 178);
+    border-radius: 10px;
+}
+
+.catalog__choose-lamp {
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    height: 6vw;
+    width: 6vw;
+    border-radius: 14px;
+    background-color: rgba(189, 221, 221, 1);
+
+    img {
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: contain;
+    }
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.25);
+    }
+    
+    &:active {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    &:focus {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+.catalog__buttons {
+    display: flex;
+    flex-direction: row;
+    height: 3vw;
+}
+
+.catalog__choose-mode {
+    width: 50%;
+}
+
+.catalog__choose-mode_light {
+    background-color: rgba(255, 243, 218, 1);
+    border-bottom-left-radius: 14px;
+}
+
+.catalog__choose-mode_dark {
+    background-color: rgba(148, 166, 166, 1);
+}
+

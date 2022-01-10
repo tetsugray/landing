@@ -11,9 +11,96 @@
 }
 
 body {
-    width: 1600px;
-    height: 1200px;
-    // height: 100%;
+    width: 100vw;
+    height: 100vh;
+    font-family: "SF Compact Display", sans-serif;
+    letter-spacing: 0.055em;
     background-color: rgba(219, 238, 238, 1);
-    // margin: 0 auto;
+}
+
+@media screen and (max-width: 900px) {
+    .header {
+        flex-direction: column;
+        margin-bottom: 2vw;
+    }
+
+    .header__nav {
+        width: 90vw;
+        padding-left: 3vw;
+        padding-top: 1vw;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: calc(94vh * 2);
+    }
+
+    .container__information {
+        width: 100%;
+    }
+
+    .article {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 9vw;
+    }
+
+    .article__text {
+        font-size: 2.5vw;
+        line-height: 2.9vw;
+        text-align: justify;
+    }
+
+    .catalog {
+        width: 96vw;
+        position: relative;
+        border-right: 1px solid rgba(196, 196, 196, 1);
+    }
+
+    .catalog__wrapper {
+        width: 55vw;
+        margin-left: -6vw;
+    }
+
+    .catalog__lamp {
+        position: absolute;
+        width: 39vw;
+        left: 40vw;
+    }
+
+    .catalog__options {
+        width: 23vw;
+        height: 45vw;
+    }
+
+    .catalog__lamp-list {
+        width: 23vw;
+        height: 43vw;
+    }
+
+    .catalog__lamp-wrapper {
+        width: 18vw;
+    }
+
+    .catalog__choose-lamp {
+        width: 18vw;
+        height: 18vw;
+    }
+
+    .catalog__buttons {
+        height: 10vw;
+    }
+
+    .container__demonstration {
+        width: 75vw;
+        left: 15vw;
+    }
+
+    .container__lamp {
+        max-width: 35%;
+        max-height: 25%;
+        left: 15vw;
+    }
 }

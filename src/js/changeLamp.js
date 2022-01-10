@@ -14,12 +14,12 @@ export function changeLamp(data) {
         let material = data[id].material.charAt(0).toUpperCase() + data[id].material.slice(1).toLowerCase()
         
         let infoTemplate = `
-        <p class="catalog__text">
+        <div class="catalog__text">
             <b>Material:</b> ${material} <br><br>
             <b>Dimensions (cm):</b> H ${data[id].height} x W ${data[id].width} x D ${data[id].width} <br><br>
             <b>Net Weight:</b> ${data[id].weight} kg <br><br>
             <b>Electrification:</b><br> ${data[id].electrification.split(',').join(' |')}
-        </p>
+        </div>
         `
         for (let i = 0; i < lampButtons.length; i++) {
             lampButtons[i].classList.remove('active')

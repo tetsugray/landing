@@ -1,0 +1,10 @@
+@import "lamp.scss";
+@import "options.scss";
+@import "wrapper.scss";
+
+.catalog {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid rgba(196, 196, 196, 1);
+}

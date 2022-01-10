@@ -1,9 +1,11 @@
-@import 'information.scss';
-@import 'demonstration.scss';
-@import 'article.scss';
-@import 'catalog.scss';
+@import "information.scss";
+@import "demonstration.scss";
+@import "article.scss";
+@import "catalog/catalog.scss";
 
 .container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    height: 93vh;
 }
