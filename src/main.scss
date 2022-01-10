@@ -34,7 +34,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: calc(94vh * 2);
+        height: calc(80vh * 2);
     }
 
     .container__information {
@@ -67,6 +67,7 @@ body {
     .catalog__lamp {
         position: absolute;
         width: 39vw;
+        height: 55vw;
         left: 40vw;
     }
 
@@ -96,11 +97,15 @@ body {
     .container__demonstration {
         width: 75vw;
         left: 15vw;
+        border: 1px solid black;
     }
 
     .container__lamp {
-        max-width: 35%;
-        max-height: 25%;
+        // max-width: 35%;
+        // max-height: 25%;
+        width: 35vw;
+        height: 28vw;
+        // width: 20%;
         left: 15vw;
     }
 }
