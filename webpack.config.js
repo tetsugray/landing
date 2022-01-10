@@ -1,7 +1,12 @@
+const webpack = require('webpack')
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+const ghpages = require('gh-pages')
+ghpages.publish('dist', {
+    src: ['**/*', '**/*/*']
+}, function(err) {console.log(err)})
 
 module.exports = {
     context: path.resolve(__dirname, 'src'),
@@ -9,8 +14,9 @@ module.exports = {
     entry: './index.js',
     target: process.env.NODE_ENV === 'development' ? 'web' : 'browserslist',
     output: {
-        filename: 'bundle.js',
-        path: path.resolve(__dirname, 'dist')
+        filename: 'bundle.[hash].js',
+        path: path.resolve(__dirname, 'dist'),
+        assetModuleFilename: 'images/[hash][name][ext]'
     },
     devServer: {
         static: {
@@ -22,7 +28,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: 'index.html',
+            template: 'index.html'
         }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({

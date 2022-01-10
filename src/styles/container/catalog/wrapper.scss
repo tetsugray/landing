@@ -1,0 +1,33 @@
+.catalog__wrapper {
+    margin-top: 1vw;
+    width: 23vw;
+    margin-left: -3.5vw;
+}
+
+.catalog__lamp-information {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    background-color: rgba(228, 215, 185, 1);
+    border-radius: 50%;
+}
+
+.catalog__text {
+    position: absolute;
+    font-size: 1.6vh;
+    line-height: 2.2vh;
+    overflow-y: auto;
+    width: 65%;
+    height: 50%;
+    left: 22%;
+    top: 29%;
+}
+
+.catalog__text::-webkit-scrollbar {
+    width: 5px;
+}
+
+.catalog__text::-webkit-scrollbar-thumb {
+    background-color: rgb(182, 178, 178);
+    border-radius: 10px;
+}
