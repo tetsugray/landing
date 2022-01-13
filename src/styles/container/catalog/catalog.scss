@@ -1,3 +1,4 @@
+@import "../../variables.scss";
 @import "lamp.scss";
 @import "options.scss";
 @import "wrapper.scss";
@@ -6,5 +7,5 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-top: 1px solid rgba(196, 196, 196, 1);
+    border-top: 1px solid $scrollbar-color;
 }

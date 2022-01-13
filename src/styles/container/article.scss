@@ -1,12 +1,25 @@
+@import "../variables.scss";
+
 .article {
     width: 36vw;
-    margin-top: 5vh;
+    height: 15vw;
+    margin-top: 1vh;
     margin-left: 3.5vw;
     margin-bottom: 4vh;
+    overflow: auto;
+}
+
+.article::-webkit-scrollbar {
+    width: 5px;
+}
+
+.article::-webkit-scrollbar-thumb {
+    background-color: $scrollbar-color;
+    border-radius: 10px;
 }
 
 .article__text {
     font-size: 2.5vh;
     line-height: 2.9vh;
-    padding-bottom: 5vh;
+    margin-top: 4vh;
 }

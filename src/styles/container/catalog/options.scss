@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 .catalog__options {
     margin-top: 3vh;
     width: 8vw;
@@ -19,13 +21,16 @@
 
 .catalog__lamp-wrapper {
     width: 6vw;
+    text-align: center;
+    // vertical-align: middle;
 }
+
 .catalog__lamp-list::-webkit-scrollbar {
     width: 5px;
 }
 
 .catalog__lamp-list::-webkit-scrollbar-thumb {
-    background-color: rgb(182, 178, 178);
+    background-color: $scrollbar-color;
     border-radius: 10px;
 }
 
@@ -64,6 +69,12 @@
 
 .catalog__choose-mode {
     width: 50%;
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
 }
 
 .catalog__choose-mode_light {
