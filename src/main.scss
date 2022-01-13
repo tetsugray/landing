@@ -1,4 +1,5 @@
-@import "~normalize.css";
+@import "styles/variables.scss";
+@import "styles/preloader.scss";
 @import "styles/header/header.scss";
 @import "styles/container/container.scss";
 @import "styles/font.scss";
@@ -34,7 +35,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: start;
-        height: calc(100vh * 2);
+        height: 160vh;
     }
 
     .container__information {
@@ -56,7 +57,7 @@ body {
     .catalog {
         width: 96vw;
         position: relative;
-        border-right: 1px solid rgba(196, 196, 196, 1);
+        border-right: 1px solid $scrollbar-color;
     }
 
     .catalog__wrapper {

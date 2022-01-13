@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 .catalog__wrapper {
     margin-top: 1vw;
     width: 23vw;
@@ -28,6 +30,6 @@
 }
 
 .catalog__text::-webkit-scrollbar-thumb {
-    background-color: rgb(182, 178, 178);
+    background-color: $scrollbar-color;
     border-radius: 10px;
 }

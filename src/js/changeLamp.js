@@ -1,9 +1,10 @@
 export function changeLamp(data) {
     const lampButtons = document.querySelectorAll('.catalog__choose-lamp')
+
     for (let i = 0; i < lampButtons.length; i++) {
         lampButtons[i].addEventListener('click', clickonLamp)
     }
-    
+
     function clickonLamp() {
         const infoDiv = document.querySelector('.catalog__lamp-information')
         const fullLamp = document.querySelector('.catalog__lamp')

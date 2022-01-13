@@ -1,21 +1,21 @@
-import {darkImage, lightImage} from '..'
-
+import {bgImgDark, bgImgLight, picture} from './variables'
 
 export function changeMode(data) {
-
-    let lightButton = document.querySelector('.catalog__choose-mode_light')
-    let darkButton = document.querySelector('.catalog__choose-mode_dark')
-    let image = document.querySelector('.container__img')
-    let visibleLamp = document.querySelector('.container__lamp')
-    
+    const lampButtons = document.querySelectorAll('.catalog__choose-lamp')
+    const lightButton = document.querySelector('.catalog__choose-mode_light')
+    const darkButton = document.querySelector('.catalog__choose-mode_dark')
+    const visibleLamp = document.querySelector('.container__lamp')
 
     lightButton.addEventListener('click', chooseModeLight)
     darkButton.addEventListener('click', chooseModeDark)
     
     function chooseModeLight() {
         visibleLamp.style.display = ''
-        image.src = lightImage
-        image.alt = "background image light"
+        picture.innerHTML = bgImgLight
+
+        for (let i = 0; i < lampButtons.length; i++) {
+            lampButtons[i].removeEventListener('click', chooseModeLight)
+        }
     }
     
     function chooseModeDark() {
@@ -24,14 +24,12 @@ export function changeMode(data) {
 
         if (isDarkMode === true) {
             visibleLamp.style.display = 'none'
-            image.src = darkImage
-            image.alt = "background image dark"
+            picture.innerHTML = bgImgDark
+            for (let i = 0; i < lampButtons.length; i++) {
+                lampButtons[i].addEventListener('click', chooseModeLight)
+            }
         } else {
             alert(`Sorry, this lamp doesn't have dark mode.`)
-        }
-        const lampButtons = document.querySelectorAll('.catalog__choose-lamp')
-        for (let i = 0; i < lampButtons.length; i++) {
-            lampButtons[i].addEventListener('click', chooseModeLight)
         }
     }
 }
