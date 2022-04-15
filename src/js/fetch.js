@@ -1,6 +1,6 @@
 import {findListWrapper, imgContainer, loader} from './variables'
 
-const url = 'https://private-anon-098d781a4e-lampshop.apiary-mock.com/lamps'
+const url = 'https://private-anon-ba5bcbebfa-lampshop.apiary-mock.com/lamps'
 
 export async function getLampData() {
     try {
@@ -12,9 +12,6 @@ export async function getLampData() {
         console.error(err)
         alert(`Something goes wrong.`)
     } finally {
-        const findPreloader = document.querySelectorAll('.preloader')
-        for (let i = 0; i < findPreloader.length; i++) {
-            findPreloader[i].remove()
-        }
+        document.querySelectorAll('.preloader').forEach(el => el.remove())
     }
 }
