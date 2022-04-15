@@ -13,10 +13,6 @@ export function changeMode(data) {
         visibleLamp.style.display = ''
         picture.innerHTML = bgImgLight
         lampButtons.forEach(el => el.removeEventListener('click', chooseModeLight))
-
-        // for (let i = 0; i < lampButtons.length; i++) {
-        //     lampButtons[i].removeEventListener('click', chooseModeLight)
-        // }
     }
     
     function chooseModeDark() {
@@ -27,9 +23,6 @@ export function changeMode(data) {
             visibleLamp.style.display = 'none'
             picture.innerHTML = bgImgDark
             lampButtons.forEach(el => el.addEventListener('click', chooseModeLight))
-            // for (let i = 0; i < lampButtons.length; i++) {
-            //     lampButtons[i].addEventListener('click', chooseModeLight)
-            // }
         } else {
             alert(`Sorry, this lamp doesn't have dark mode.`)
         }

@@ -1,17 +1,13 @@
 export function changeLamp(data) {
-    // const lampButtons = document.querySelectorAll('.catalog__choose-lamp')
+    const lampButtons = document.querySelectorAll('.catalog__choose-lamp')
     document.querySelector('.catalog__lamp-list').addEventListener('click', clickonLamp)
-
-    // lampButtons.forEach(el => el.addEventListener('click', clickonLamp))
-    // for (let i = 0; i < lampButtons.length; i++) {
-    //     lampButtons[i].addEventListener('click', clickonLamp)
-    // }
 
     function clickonLamp() {
         const infoDiv = document.querySelector('.catalog__lamp-information')
         const fullLamp = document.querySelector('.catalog__lamp')
         const demonstrationLamp = document.querySelector('.container__lamp')
         const id = document.activeElement.value
+        console.log(id)
 
         let lampImage = `<img src="${data[id].image}" alt="${data[id].name}">`
         let material = data[id].material.charAt(0).toUpperCase() + data[id].material.slice(1).toLowerCase()
@@ -25,9 +21,6 @@ export function changeLamp(data) {
         </div>
         `
         lampButtons.forEach(el => el.classList.remove('active'))
-        // for (let i = 0; i < lampButtons.length; i++) {
-        //     lampButtons[i].classList.remove('active')
-        // }
         document.activeElement.classList.add('active')
         infoDiv.innerHTML = infoTemplate
         fullLamp.innerHTML = lampImage
