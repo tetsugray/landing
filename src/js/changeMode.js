@@ -4,7 +4,7 @@ export function changeMode(data) {
     const lampButtons = document.querySelectorAll('.catalog__choose-lamp')
     const lightButton = document.querySelector('.catalog__choose-mode_light')
     const darkButton = document.querySelector('.catalog__choose-mode_dark')
-    const visibleLamp = document.querySelector('.container__lamp')
+    const visibleLamp = document.querySelector('.main__lamp')
 
     lightButton.addEventListener('click', chooseModeLight)
     darkButton.addEventListener('click', chooseModeDark)

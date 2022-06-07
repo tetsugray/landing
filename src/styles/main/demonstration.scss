@@ -1,4 +1,4 @@
-.container__demonstration {
+.main__demonstration {
     position: relative;
     width: 54vw;
     height: 93vh;
@@ -9,10 +9,11 @@
         position: absolute;
         border-radius: 2%;
         object-fit: contain;
+        box-shadow: 0px 3px 7px 0px rgb(170, 185, 185);
     }
 }
 
-.container__lamp {
+.main__lamp {
     position: absolute;
     left: 9vw;
     max-height: 33%;
@@ -24,5 +25,6 @@
         max-width: 100%;
         max-height: 100%;
         object-fit: contain;
+        box-shadow: none;
     }
 }

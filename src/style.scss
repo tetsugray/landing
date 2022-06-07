@@ -1,7 +1,7 @@
 @import "styles/variables.scss";
 @import "styles/preloader.scss";
 @import "styles/header/header.scss";
-@import "styles/container/container.scss";
+@import "styles/main/main.scss";
 @import "styles/font.scss";
 
 * {
@@ -17,6 +17,11 @@ body {
     font-family: "SF Compact Display", sans-serif;
     letter-spacing: 0.055em;
     background-color: rgba(219, 238, 238, 1);
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 80vw;
 }
 
 @media screen and (max-width: 900px) {
@@ -31,14 +36,14 @@ body {
         padding-top: 1vw;
     }
 
-    .container {
+    .main {
         display: flex;
         flex-direction: column;
         justify-content: start;
         height: 160vh;
     }
 
-    .container__information {
+    .main__information {
         width: 100%;
     }
 
@@ -100,13 +105,13 @@ body {
         height: 10vw;
     }
 
-    .container__demonstration {
+    .main__demonstration {
         width: 80vw;
         left: 15vw;
         margin-top: 5vw;
     }
 
-    .container__lamp {
+    .main__lamp {
         width: 35vw;
         height: 28vw;
         left: 15vw;

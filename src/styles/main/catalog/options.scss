@@ -1,17 +1,18 @@
 @import "../../variables.scss";
 
 .catalog__options {
-    margin-top: 3vh;
+    margin-top: 4vh;
     width: 8vw;
-    height: 20vw;
+    height: 23vw;
     background-color: rgba(189, 221, 221, 1);
     border-radius: 14px 0 0 14px;
+    // box-shadow: inset -3px -5px 10px 0px rgb(170, 185, 185);
 }
 
 .catalog__lamp-list {
     width: 8vw;
     border-radius: 14px;
-    height: 18vw;
+    height: 21vw;
     overflow-y: auto;
     overflow-x: hidden;
     display: flex;
@@ -50,14 +51,10 @@
     &:hover {
         background-color: rgba(255, 255, 255, 0.25);
     }
-    
-    &:active {
-        background-color: rgba(255, 255, 255, 0.5);
-    }
+}
 
-    &:focus {
-        background-color: rgba(255, 255, 255, 0.5);
-    }
+.active {
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .catalog__buttons {

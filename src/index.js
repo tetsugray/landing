@@ -1,4 +1,4 @@
-import './main.scss'
+import './style.scss'
 
 import {addLampList} from './js/addLampList'
 import {getLampData} from './js/fetch'

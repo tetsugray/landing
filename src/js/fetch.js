@@ -1,10 +1,10 @@
-import {findListWrapper, imgContainer, loader} from './variables'
+import {findListWrapper, imgMain, loader} from './variables'
 
-const url = 'https://private-anon-ba5bcbebfa-lampshop.apiary-mock.com/lamps'
+const url = 'https://private-anon-ebdf560c0b-lampshop.apiary-mock.com/lamps'
 
 export async function getLampData() {
     try {
-        imgContainer.insertAdjacentHTML('afterbegin', loader)
+        imgMain.insertAdjacentHTML('afterbegin', loader)
         findListWrapper.insertAdjacentHTML('afterbegin', loader)
         let response = await fetch(url)
         return await response.json()

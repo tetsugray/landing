@@ -1,13 +1,15 @@
 .header__nav {
-    padding-right: 2.5vw;
-    width: 31vw;
+    padding-right: 2vw;
+    width: 24vw;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
 
 .header__link {
-    font-size: 2.2vh;
+    display: flex;
+    justify-content: center;
+    font-size: 2vh;
     line-height: 2.9vh;
     font-weight: bold;
     color: rgba(61, 144, 144, 1);
