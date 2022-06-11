@@ -9,10 +9,10 @@ let mode = isDev ? 'development' : 'production'
 const filename = (name, ext) => isDev ? `${name}.${ext}` : `${name}.[hash].${ext}`
 
 
-// const ghpages = require('gh-pages')
-// ghpages.publish('dist', {
-//     src: ['**/*', '**/*/*']
-// }, function(err) {console.log(err)})
+const ghpages = require('gh-pages')
+ghpages.publish('dist', {
+    src: ['**/*', '**/*/*']
+}, function(err) {console.log(err)})
 
 module.exports = {
     context: path.resolve(__dirname, 'src'),
