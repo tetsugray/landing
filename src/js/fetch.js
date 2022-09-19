@@ -1,6 +1,6 @@
 import {findListWrapper, imgMain, loader} from './variables'
 
-const url = 'https://private-anon-ebdf560c0b-lampshop.apiary-mock.com/lamps'
+const url = 'https://private-anon-36be51ed02-lampshop.apiary-mock.com/lamps'
 
 export async function getLampData() {
     try {
